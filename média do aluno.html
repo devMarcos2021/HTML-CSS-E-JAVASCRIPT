@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do aluno v.1.0</title>
+    <style>
+        #botao { 
+            padding: 20px;
+            font: normal 15pt arial;
+            margin-bottom: 20px;
+        }
+        .texto {
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1> Média do aluno (versão 1.0)</h1>
+    <input type = "button" value = "Calcular média" id = "botao" onclick = "calcular()">
+    <div class = "texto"></div>
+    <div class = "texto"></div>
+    <div class = "texto"></div>
+
+    <script>
+        function calcular() {
+
+            var nome = window.prompt("digite seu nome completo.");
+            var nota1 = Number(window.prompt("digite a nota da primeira prova."));
+            var nota2 = Number(window.prompt("digite a nota da prova 2."));
+            var media = (nota1 + nota2) / 2
+
+            var texto1 = document.getElementsByClassName("texto")[0];
+            var texto2 = document.getElementsByClassName("texto")[1];
+            var texto3 = document.getElementsByClassName("texto")[2];
+            
+            texto1.innerHTML = `Calculando a média de ${nome}.`;
+            texto2.innerHTML = `As notas obtidas foram ${nota1} e ${nota2}`;
+            texto3.innerHTML = `A média final será  ${media}`;
+        }
+
+            
+    </script>
+    
+</body>
+</html>
