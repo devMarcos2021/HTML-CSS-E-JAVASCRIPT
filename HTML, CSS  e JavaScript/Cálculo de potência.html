@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número ao quadrado 2</title>
+    <style>
+    section { 
+        
+        text-align: center;
+        border: 1px solid black;
+        padding:30px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 100px;
+        margin-right:100px;
+
+
+    }
+    </style>
+</head>
+<body>
+    <!--Esse é um exercicio que foi feito a partir dos desafios encontrados no repositório do prof. Gustavo Guanabara-->
+    <section>
+
+        <h1>Calcule a potência de um número</h1>
+        <h3>Escolha um número até 100 e verique a potência.</h3>
+
+        <p> <input type = "number" name = "base" id = "base" max = "100" min = "0"> 
+            elevado à <input type = "number" name ="expoente" id = "expo" max = "10" min ="0">
+             <input type = "button" value = "Calcular" onclick = "calcular()">
+        </p>
+        <div id = "res">Resultado</div>
+
+    </section>
+    
+    <script>
+        function calcular() { 
+            
+            var n1 = document.getElementById ("base");
+            var n2 = document.getElementById ("expo");
+            var base = Number(n1.value);
+            var expoente = Number(n2.value);
+            var calculo = base ** expoente;
+            var resultado = document.getElementById("res")
+
+            if (base > 100) { 
+
+                alert ("[ERRO} Digite um número base de 0 a 100")
+            }else {
+
+                var escrita = ""
+                if (expoente == 0) {
+                    escrita = "a zero"
+                } else if (expoente == 1) { 
+                    escrita = "à um"
+                }else if (expoente == 2) {
+                    escrita = "ao quadrado"
+                }else if (expoente == 3) {
+                    escrita = "ao cubo"
+                }else if (expoente == 4) { 
+                    escrita = "à quarta potência"
+                }else if (expoente == 5) { 
+                    escrita = "à quinta potência"
+                }else if (expoente == 6) {
+                    escrita = "à sexta potência"
+                }else if (expoente == 7){
+                    escrita = "à sétima potência"
+                }else if (expoente == 8){
+                    escrita = "à oitava potência"
+                }else if (expoente == 9){ 
+                    escrita = "à nona potência"                
+                } else {
+                    escrita = "à décima potência"
+                }
+                
+                res.innerHTML = `O valor de ${base} elevado ${escrita} é ${calculo}!` 
+            }
+        }
+
+    </script>
+</body>
+</html>
