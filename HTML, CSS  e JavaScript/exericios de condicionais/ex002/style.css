@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-size: 20px;
+    }
+#texto1 {
+    margin: 5px;
+    width: 50px;
+    height: 25px;
+    font-size:20px;
+}
+#texto2 {
+    margin: 5px;
+    width:50px;
+    height:25px;
+    font-size:20px;
+}
+#calcular { 
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:10px;
+    font-size:20px;
+    background-color:darkcyan;
+    color: white;
+    border-radius:20px;
+}
+#mark1 {
+    background-color:rgb(88, 219, 99);
+    padding:10px;
+}
+#mark2 {
+    background-color:rgba(204, 41, 41, 0.685);
+    padding:10px;
+}
