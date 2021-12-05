@@ -1,0 +1,16 @@
+
+body{
+    margin:auto;
+    width: 400px;
+    font-size:20px;
+    text-align:center;
+}
+#num1,#num2,#num3{ 
+    width:70px;
+    padding:10px;
+    font-size:20px;
+}
+#botao{
+    font-size: 20px;
+    margin:20px;
+}
