@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            margin:auto;
+            width:400px;
+            text-align: center;
+            margin-bottom:1em;
+        }
+        form {
+        /*Para centralizar o formulário na tela*/
+            margin:0 auto;
+            width:400px;
+        /*Para mostrar as bordas*/
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius:1em;
+        }
+        form div + div{
+            margin-top:1em;
+        }
+        label{
+            display:inline-block;
+            width:110px;
+            text-align:right;
+            
+        }
+        input{
+            width:60%;
+        }
+        textarea{
+            width:60%;
+        
+        }
+        #conteiner-msg{
+            display:flex;
+        }
+        #label-msg{
+            margin-right:05px;
+        }
+
+    </style>
+    <title>Aprendendo a fazer formulários</title>
+</head>
+<body>
+    <h1>Primeiro formulário</h1>
+    <!--Inicio formulário-->
+    <form action="#" method="post">
+        <!--caixa de texto nome-->
+        <div>
+            <label for = "nome">Nome:</label>
+            <input type ="text" id="nome"/>
+         </div>
+         <!--caixa de email-->
+         <div>   
+            <label for = "email">Email:</label>
+            <input type="email" id="email"/>
+        </div>
+        <!--caixa de mensagem-->
+        <div id = "conteiner-msg">        
+            <label for="msg" id="label-msg" >Mensagem:</label>
+            <textarea id="msg"></textarea>
+        </div>
+        <!--botão enviar-->
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
